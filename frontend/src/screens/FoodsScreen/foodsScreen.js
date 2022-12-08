@@ -31,7 +31,9 @@ const FoodScreen = () => {
                 {
                         loading ? (<Loader />) : error ? (<Message variant='danger'>{error}</Message>
                         ) : (
-                              <Row className='ro' style={{ backgroundColor: "white" }} >
+
+                              <Row className='ro' style={{ backgroundColor: "#f0f0f0" }} >
+
                               {foods.map((food) =>
 
                                     <Col key={food._id} sm={12} md={6} lg={4} xl={4}>
