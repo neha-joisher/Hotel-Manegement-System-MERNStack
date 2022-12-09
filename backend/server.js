@@ -8,7 +8,17 @@ import path from 'path'
 //routes
 import roomRoutes from './routes/roomsRoutes.js'
 import userRoutes from './routes/userRoutes.js'
+import restaurentsRoutes from './routes/restaurantRoutes.js'
+import weddingRoutes from './routes/weddingRoutes.js'
+import conferenceRoutes from './routes/conferenceRoutes.js'
+import conInsideRoutes from './routes/conInsideRoute.js'
+import uploadRoutes from './routes/uploadRoutes.js'
 
+import bookingRoutes from './routes/bookingRoutes.js'
+
+import foodRoutes from './routes/foodRoutes.js'
+import orderRoutes from './routes/orderRoutes.js'
+import tableBookingRoutes from './routes/tableBookingRoutes.js'
 
 dotenv.config()
 
@@ -29,11 +39,18 @@ app.use(express.json())
 //calling routes
 app.use('/api/rooms', roomRoutes)
 app.use('/api/users', userRoutes)
+app.use('/api/restaurents', restaurentsRoutes)
+app.use('/api/weddings', weddingRoutes)
+app.use('/api/conference', conferenceRoutes)
+app.use('/api/conInside', conInsideRoutes)
+app.use('/api/uploads', uploadRoutes)
+app.use('/api/orders', orderRoutes)
 
 const __dirname = path.resolve()
 app.use('/images', express.static(path.join(__dirname, '/images')))
 app.use('/api/booking', bookingRoutes)
-
+app.use('/api/food', foodRoutes)
+app.use('/api/tableBooking', tableBookingRoutes)
 
 //paypal id connect
 app.get('/api/config/paypal', (req, res) =>
