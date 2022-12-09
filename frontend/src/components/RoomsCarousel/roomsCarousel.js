@@ -27,7 +27,7 @@ const RoomsCarousel = () => {
                               className="d-block w-100"
                               // src={Room2}
                               src="https://images.unsplash.com/photo-1580977276076-ae4b8c219b8e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2944&q=80"
-                              alt="Third slide"
+                              alt="second slide"
                               style={{ height: "500px", objectFit: "cover" }}
                         />
                         <Carousel.Caption>
@@ -39,7 +39,7 @@ const RoomsCarousel = () => {
                         <img
                               className="d-block w-100"
                               // src={Room3}
-                              src="https://cdn.pixabay.com/photo/2018/01/28/04/17/relaxing-3112750_960_720.jpg"
+                              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
                               alt="Third slide"
                               style={{ height: "500px", objectFit: "cover" }}
                         />
@@ -52,8 +52,8 @@ const RoomsCarousel = () => {
                         <img
                               className="d-block w-100"
                               // src={Room4}
-                              src="https://cdn.pixabay.com/photo/2016/02/26/16/16/chandelier-1224248_960_720.jpg"
-                              alt="Third slide"
+                              src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                              alt="Fouth slide"
                               style={{ height: "500px", objectFit: "cover" }}
                         />
                         <Carousel.Caption>
