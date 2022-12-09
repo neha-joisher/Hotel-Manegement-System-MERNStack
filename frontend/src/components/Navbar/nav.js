@@ -8,19 +8,19 @@ const Nav1 = () => {
             <Navbar className="py-1 justify-content-center nav_bar" >
                   <Nav >
                         < li class="nav-item" >
-                              <a style={{color:'white'}} class="nav-link active" aria-current="page" href='/rooms'>Our Luxurious Rooms </a>
+                              <a style={{color:'white'}} class="nav-link active" aria-current="page" href='/rooms'>Stay</a>
                         </li>
 
                         < li class="nav-item" style={{ textIndent: '60px' }}>
-                              <a style={{color:'white'}} class="nav-link active" aria-current="page" href='/restaurants'>Our Restaurants</a>
+                              <a style={{color:'white'}} class="nav-link active" aria-current="page" href='/restaurants'>DineIn</a>
                         </li>
 
                         < li class="nav-item" style={{ textIndent: '60px' }}>
-                              <a style={{color:'white'}} class="nav-link active" aria-current="page" href='/foods'>Our Products</a>
+                              <a style={{color:'white'}} class="nav-link active" aria-current="page" href='/foods'>Delivery</a>
                         </li>
 
                         < li class="nav-item" style={{ textIndent: '60px' }}>
-                              <a style={{color:'white'}} class="nav-link active" aria-current="page" href='/weddings'>Weddings</a>
+                              <a style={{color:'white'}} class="nav-link active" aria-current="page" href='/weddings'>Halls</a>
                         </li>
 
                   </Nav>
