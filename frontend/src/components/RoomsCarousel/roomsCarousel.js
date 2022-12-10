@@ -27,7 +27,7 @@ const RoomsCarousel = () => {
                               className="d-block w-100"
                               // src={Room2}
                               src="https://images.unsplash.com/photo-1580977276076-ae4b8c219b8e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2944&q=80"
-                              alt="second slide"
+                              alt="Second slide"
                               style={{ height: "500px", objectFit: "cover" }}
                         />
                         <Carousel.Caption>
@@ -53,7 +53,7 @@ const RoomsCarousel = () => {
                               className="d-block w-100"
                               // src={Room4}
                               src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-                              alt="Fouth slide"
+                              alt="Fourth slide"
                               style={{ height: "500px", objectFit: "cover" }}
                         />
                         <Carousel.Caption>

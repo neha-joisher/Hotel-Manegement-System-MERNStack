@@ -1,7 +1,5 @@
 import mongoose from 'mongoose'
-// import {} from 'dotenv/config'
-import dotenv  from "dotenv"
-// import * as path from 'path'
+import dotenv from "dotenv"
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -10,26 +8,16 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 
-// const dotenv = require ('dotenv');
-dotenv.config({path:__dirname+'/.env'});
 
-// console.log(process.env.MONGO_URI);
+dotenv.config({ path: __dirname + '/.env' });
+
+
 const connectDB = async () => {
 
       //database connection
       try {
-            // const conn = await mongoose.connect("mongodb://localhost:27017/hotel", {
-            //       useUnifiedTopology: true,
-            //       useNewUrlParser: true,
-            //       useCreateIndex: true
-            // })
 
-            // const conn = await mongoose.connect(process.env.MONGO_URI, {
-            //       useUnifiedTopology: true,
-            //       useNewUrlParser: true,
-            //       useCreateIndex: true
-            // })
-
+            //added mongoDB Atlas connection
             const conn = await mongoose.connect(process.env.MONGO_URI || "mongodb+srv://seona:seona@cluster0.0p1p6fp.mongodb.net/?retryWrites=true&w=majority", {
                   useUnifiedTopology: true,
                   useNewUrlParser: true,
@@ -38,9 +26,9 @@ const connectDB = async () => {
 
             //database connected alert
             console.log(`MongoDB Connected: ${conn.connection.host}`)
-      } 
+      }
       catch (error) {
-            console.error(`Error: ${error.message}`) //database not connected message
+            console.error(`Error: ${error.message}`) 
             process.exit(1)
       }
 }

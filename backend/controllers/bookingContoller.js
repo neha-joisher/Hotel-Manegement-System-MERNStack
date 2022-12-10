@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid'
 import moment from 'moment'
 import Stripe from 'stripe'
 
-const stripe = new Stripe (
+const stripe = new Stripe(
   'sk_test_51LQQfcDVLv2wJ0j5tDTmDV6gl3BbSYRHdeP17XtnNwRHCMqoPGN6EtBk9EypXes48wxQZBsPGcvYi9eCO4C9DZC400Gn1vFLBf'
 )
 
@@ -98,7 +98,7 @@ const cancelBookings = asyncHandler(async (req, res) => {
   const { bookingid, roomid } = req.body
 
   try {
-    // const bookingitem = await Bookings.findOne({ _id: bookingid })
+
     const bookingitem = await Bookings.findOne({ _id: bookingid })
     bookingitem.status = 'cancelled'
     await bookingitem.save()

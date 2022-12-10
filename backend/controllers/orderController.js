@@ -37,7 +37,7 @@ const addOrderItems = asyncHandler(async (req, res) => {
     }
 })
 
-//Update order details
+//Get Order Updates
 const updateOrderToPaid = asyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id)
 
@@ -61,7 +61,6 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
 })
 
 //Get order details
-
 const getOrderById = asyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id).populate(
         'user',
@@ -75,9 +74,6 @@ const getOrderById = asyncHandler(async (req, res) => {
         throw new Error('Order not found')
     }
 })
-
-
-
 
 
 //Get user orders 
