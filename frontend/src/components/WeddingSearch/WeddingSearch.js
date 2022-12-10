@@ -21,7 +21,7 @@ import { filterweddings } from '../../actions/weddingAction'
                     </div>
 
                     <div className='col-md-3 mt-2'>
-                        <button className="btn btn-outline-success" style={{width: '35%' }} onClick={() => (dispatch(filterweddings(searchKey)))}>
+                        <button class="btn btn-dark btn-inline rounded-pill shadow-sm" style={{width: '35%' }} onClick={() => (dispatch(filterweddings(searchKey)))}>
                             Find
                         </button>
                     </div>

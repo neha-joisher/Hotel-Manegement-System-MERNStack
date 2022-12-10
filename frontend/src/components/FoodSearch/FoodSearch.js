@@ -16,7 +16,7 @@ import { filterFoods } from '../../actions/foodsAction'
                     </div>
 
                     <div className='col-md-3 mt-2'>
-                        <button className="btn btn-outline-warning" style={{ marginTop: '-8px', width: '50%' }} onClick={() => (dispatch(filterFoods(searchKey)))}>
+                        <button class="btn btn-dark btn-inline rounded-pill shadow-sm" style={{ marginTop: '-8px', width: '50%' }} onClick={() => (dispatch(filterFoods(searchKey)))}>
                             Search
                         </button>
                     </div>

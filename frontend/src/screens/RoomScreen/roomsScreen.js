@@ -202,7 +202,7 @@ const RoomsScreen = () => {
                                                       <div style={{ float: 'right' }} className='vb'>
 
                                                             {(fromdate && todate) && (<LinkContainer to={`/roombook/${room._id}/${fromdate}/${todate}`}>
-                                                                  <button className='book_now'>Book Now</button>
+                                                                  <button className="btn btn-dark btn-inline rounded-pill shadow-sm">Book Now</button>
                                                             </LinkContainer>)}
 
 

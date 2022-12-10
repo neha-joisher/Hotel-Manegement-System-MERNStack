@@ -87,7 +87,7 @@ const WeddingByIdScreen = ({ match, history }) => {
                                                             <ListGroup as="ul">
                                                                   <ListGroup.Item as="li" variant="secondary"></ListGroup.Item>
                                                                   <ListGroup.Item as="li" disabled><p>Please fill out the form so that we receive your event requirements</p></ListGroup.Item>
-                                                                  <ListGroup.Item><LinkContainer to='/requestPropsal'><button type="button" className='submit'>Submit your request</button></LinkContainer></ListGroup.Item>
+                                                                  <ListGroup.Item><LinkContainer to='/requestPropsal'><button type="button" className="btn btn-dark btn-inline rounded-pill shadow-sm">Submit your request</button></LinkContainer></ListGroup.Item>
                                                             </ListGroup>
                                                       </Col>
                                                 </Row>
