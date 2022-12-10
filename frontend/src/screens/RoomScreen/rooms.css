@@ -57,3 +57,7 @@ img{
 .search_box {
   /* background-color: black; */
 }
+
+.container-card{
+  padding-bottom: 35px;
+}

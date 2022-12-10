@@ -31,7 +31,7 @@ const Navbar = (history) => {
             src={logo}
             style={{ width: "60px", height: "50px", paddingRight: "10px" }}
           ></img>
-          <div className="bistro_brand">Tipton Hotel</div>
+          <div className="tipton_brand">Tipton Hotel</div>
         </a>
         <button
           class="navbar-toggler"

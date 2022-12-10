@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Table, Button, Form, Row, Col, Container } from 'react-bootstrap'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
-import logo from './'
+import logo from './tipton-logo.png'
 import { listOrders } from '../../actions/orderAction'
 import { PDFExport, savePDF } from '@progress/kendo-react-pdf';
 import './FoodOrderReport.css'

@@ -7,7 +7,7 @@ const insertCon = asyncHandler(async (req, res) => {
         conSeats,
         conDes,
         conPrice,
-        conFeatures, conImg1, conImg2, conImg3  } = req.body
+        conFeatures, conImg1, conImg2, conImg3 } = req.body
 
 
     const newconference = new Conference({
@@ -17,14 +17,14 @@ const insertCon = asyncHandler(async (req, res) => {
         conPrice,
         conFeatures,
         conImages: [conImg1, conImg2, conImg3]
-        
+
     })
-    
+
     try {
-          await newconference.save()
-          res.send('New Conference room Added Successfully')
+        await newconference.save()
+        res.send('New Conference room Added Successfully')
     } catch (error) {
-          return res.status(400).json({ error });
+        return res.status(400).json({ error });
     }
 })
 
@@ -38,19 +38,19 @@ const getConDetailsById = asyncHandler(async (req, res) => {
     const conference = await Conference.findById(req.params.id)
 
     if (conference) {
-          res.json({
+        res.json({
             _id: conference._id,
-            conName:  conference.conName,
-            conDes:  conference.conDes,
-            conSeats:  conference.conSeats,
-            conImages:  conference.conImages,
-            conPrice:  conference.conPrice,
-            conFeatures:  conference.conFeatures,
-                
-          })
+            conName: conference.conName,
+            conDes: conference.conDes,
+            conSeats: conference.conSeats,
+            conImages: conference.conImages,
+            conPrice: conference.conPrice,
+            conFeatures: conference.conFeatures,
+
+        })
     } else {
-          res.status(404)
-          throw new Error('Invalid Conference room data')
+        res.status(404)
+        throw new Error('Invalid Conference room data')
     }
 })
 
@@ -69,22 +69,22 @@ const updateConDetails = asyncHandler(async (req, res) => {
     const conference = await Conference.findById(req.params.id)
 
     if (conference) {
-          conference.conName = conName
-          conference.conSeats = conSeats
-          conference.conDes = conDes
-          conference.conImages = [conImg1, conImg2, conImg3]
-          conference.conPrice = conPrice
-          conference.conFeatures = conFeatures
+        conference.conName = conName
+        conference.conSeats = conSeats
+        conference.conDes = conDes
+        conference.conImages = [conImg1, conImg2, conImg3]
+        conference.conPrice = conPrice
+        conference.conFeatures = conFeatures
 
-          
-          const updateConference = await conference.save()
-          res.json(updateConference)
+
+        const updateConference = await conference.save()
+        res.json(updateConference)
 
 
     } else {
 
-          res.status(404)
-          throw new Error('Invalid wedding hall data')
+        res.status(404)
+        throw new Error('Invalid wedding hall data')
 
     }
 })
@@ -93,11 +93,11 @@ const deleteConDetails = asyncHandler(async (req, res) => {
     const conference = await Conference.findById(req.params.id)
 
     if (conference) {
-          await conference.remove()
-          res.json({ message: 'conference room Details removed' })
+        await conference.remove()
+        res.json({ message: 'conference room Details removed' })
     } else {
-          res.status(404)
-          throw new Error('Conference room details not found')
+        res.status(404)
+        throw new Error('Conference room details not found')
     }
 
 })

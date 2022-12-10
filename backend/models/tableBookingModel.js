@@ -1,10 +1,7 @@
 import mongoose from 'mongoose'
 
 const tableBookingSchema = mongoose.Schema({
-      // reservationID: {
-      //       type: String,
-      //       required: true
-      // },
+     
       
       userid: {
             type: String,
