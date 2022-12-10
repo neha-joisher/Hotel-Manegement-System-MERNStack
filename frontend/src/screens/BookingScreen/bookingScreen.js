@@ -159,7 +159,7 @@ const BookingScreen = ({ match }) => {
                                                                                     currency='USD'
                                                                               >
 
-                                                                                    <ListGroup.Item as="li" disabled > <button className='btn pay-button'>Pay Total</button></ListGroup.Item>
+                                                                                    <ListGroup.Item as="li" disabled > <button class="btn btn-dark btn-inline rounded-pill shadow-sm">Pay Total</button></ListGroup.Item>
 
                                                                               </StripeCheckout>
 

@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
 
           <div className="sec aboutus">
-            <h4>Something About Us</h4>
+            <h4>About Us</h4>
             <p>
               Tipton Hotel welcomes you in a real cosmopolitan, pulsing milieu,
               at the same time offering peace and intimate retirement, just in

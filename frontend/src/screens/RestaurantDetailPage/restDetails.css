@@ -79,7 +79,7 @@ ul.b {
   border-color: black;
   border-radius: 25px;
   border-width: 1px;
-  background-color:  rgb(90, 233, 209);
+  background-color:  rgb(0, 0, 0);
   text-align: center;
   color: azure;
   height: 50px;
@@ -91,7 +91,7 @@ ul.b {
   border-color: black;
   border-radius: 25px;
   border-width: 1.2px;
-  background-color:  rgb(12, 117, 100);
+  background-color:  rgb(80, 83, 83);
   text-align: center;
   color: azure;
   height: 50px;
