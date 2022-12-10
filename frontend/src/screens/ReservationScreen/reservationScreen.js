@@ -143,7 +143,7 @@ const ReservationScreen = ({ match, history }) => {
 
                                      <Form.Group controlId='restaurantid'>
                                           <Form.Label>Cuisine Name</Form.Label>
-                                          <Form.Control
+                                          <Form.Control required
                                                 type='text'
                                                 placeholder=''
                                                 value={restaurants.name}

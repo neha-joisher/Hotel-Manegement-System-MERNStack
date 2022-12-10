@@ -27,4 +27,3 @@ const Rest = ({ restaurant }) => {
 }
 
 export default Rest
-
