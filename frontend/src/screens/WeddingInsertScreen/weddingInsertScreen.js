@@ -127,54 +127,72 @@ const SignupScreen = ({ location, history }) => {
                                                                   
                                                                   <form onSubmit={submitHandler}>
                                                                         <div class="form-group mb-3">
+
                                                                               < input id="Enter Wedding Hall Name" type="text" placeholder="Enter Wedding Hall Name" required="" autofocus="" className="form-control" 
+
                                                                               value={wedHallName}
                                                                               onChange={(e) => setHallName(e.target.value)} />
                                                                         </div>
                                                                         <div class="form-group mb-3">
+
                                                                               <input id="input seats" type="text" placeholder="Enter maximum seatings" required="" class="form-control" 
+
                                                                               value={wedSeats}
                                                                               onChange={(e) => setSeats(e.target.value)}/>
                                                                         </div>
                                                                         <div class="form-group mb-3">
+
                                                                               <input id="input description" type="text" placeholder="Enter wedding hall description" required="" class="form-control" 
+
                                                                               value={wedDes}
                                                                               onChange={(e) => setDes(e.target.value)}/>
                                                                         </div>
                                                                         <Form.Group controlId='image'>
                                                                             <div className="form-group bn">
                                                                                 <Form.Label>Add Image</Form.Label>
+
                                                                                 <Form.Control type='text' className="form-control" placeholder='Enter Document URL'
+
                                                                                     value={wedImg1}
                                                                                     onChange={(e) => setImg1(e.target.value)}
                                                                                 ></Form.Control>
                                                                             </div>
+
                                                                             <Form.File id="file" label='Choose File' custom onChange={uploadFileHandler1}></Form.File>
                                                                             {uploading && <Loader />}
+
                                                                         </Form.Group>
 
                                                                         <Form.Group controlId='image'>
                                                                             <div className="form-group bn">
                                                                                 <Form.Label>Add Image</Form.Label>
+
                                                                                 <Form.Control type='text' className="form-control" placeholder='Enter Document URL'
+
                                                                                     value={wedImg2}
                                                                                     onChange={(e) => setImg2(e.target.value)}
                                                                                 ></Form.Control>
                                                                             </div>
+
                                                                             <Form.File id="file" label='Choose File' custom onChange={uploadFileHandler2}></Form.File>
                                                                             {uploading && <Loader />}
+
                                                                         </Form.Group>
 
                                                                         <Form.Group controlId='image'>
                                                                             <div className="form-group bn">
                                                                                 <Form.Label>Add Image</Form.Label>
+
                                                                                 <Form.Control type='text' className="form-control" placeholder='Enter Document URL'
+
                                                                                     value={wedImg3}
                                                                                     onChange={(e) => setImg3(e.target.value)}
                                                                                 ></Form.Control>
                                                                             </div>
+
                                                                             <Form.File id="file" label='Choose File' custom onChange={uploadFileHandler3}></Form.File>
                                                                             {uploading && <Loader />}
+
                                                                         </Form.Group>
                                                                         <br/>
                                                                         <button type="submit" class="btn btn-outline-warning btn-block text-uppercase mb-2 rounded-pill shadow-sm">Submit</button>

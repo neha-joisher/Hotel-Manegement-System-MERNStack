@@ -16,6 +16,7 @@ import { filterweddings } from '../../actions/weddingAction'
 
             <div className='container'>
                 <div className='row justify-content-center shadow-sm p-3 mb-5 bg-white rounded'>
+
                     <div className='col-md-3'>
                         <input value={searchKey} onChange={(e) => setSearchKey(e.target.value)} type="text" className='form-control' placeholder="What type of hall?" />
                     </div>
@@ -25,6 +26,7 @@ import { filterweddings } from '../../actions/weddingAction'
                             Find
                         </button>
                     </div>
+
 
                 </div>
 

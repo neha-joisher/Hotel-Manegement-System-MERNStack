@@ -39,37 +39,48 @@ const ReqScreen = () => {
                   
                   <div class="col-md-6">
                   <label for="inputPassword4" class="form-label">First Name</label>
+
                   <input type="text" class="form-control" id="inputPassword4" name="fName"/>
+
                   </div>
 
                   <div class="col-md-6">    
                   <label for="inputEmail4" class="form-label">Last Name</label>
+
                   <input type="text" class="form-control" id="inputEmail4" name="sName"/>
+
                   </div>
 
                   <div class="col-md-6">    
                   <label for="inputEmail4" class="form-label">E-mail ID</label>
+
                   <input type="email" class="form-control" id="inputEmail4" name="email"/>
                   </div>
                   <div class="col-md-6">
                   <label for="inputPassword4" class="form-label">Phone Number</label>
                   <input type="number" class="form-control" id="inputPassword4" name="phone"/>
+
                   </div>
 
 
                   <div class="col-12">
                   <label for="inputAddress" class="form-label">Address</label>
                   <input type="text" class="form-control" id="inputAddress" name="address1"/>
+
                   </div>
 
                   <div class="col-md-6">
                   <label for="inputCity" class="form-label">City</label>
+
                   <input type="text" class="form-control" id="inputCity" name="city"/>
+
                   </div>
 
                   <div class="col-md-6">
                   <label for="inputZip" class="form-label">ZipCode</label>
+
                   <input type="text" class="form-control" id="inputZip" name="zip"/>
+
                   <br/>
                   <br/>
                   </div>
@@ -78,21 +89,27 @@ const ReqScreen = () => {
 
                   <div class="col-12">
                   <label for="inputAddress2" class="form-label">Event Name</label>
+
                   <input type="text" class="form-control" id="inputAddress2" name="evName"/>
+
                   </div>
 
                   <div class="col-md-6">    
                   <label for="inputEmail4" class="form-label">Event starting date</label>
+
                   <input type="date" class="form-control" id="inputEmail4" name="sDate"/>
                   </div>
                   <div class="col-md-6">
                   <label for="inputPassword4" class="form-label">Event ending date</label>
                   <input type="date" class="form-control" id="inputPassword4" name="eDate"/>
+
                   </div>
 
                   <div class="col-md-5">
                   <label for="inputPassword4" class="form-label">How many people are expected?</label>
+
                   <input type="text" class="form-control" id="inputPassword4" name="noAtend"/>
+
                   </div>
 
                   <div class="col-12">
