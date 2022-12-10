@@ -52,4 +52,5 @@ const RestaurantScreen = () => {
       )
 }
 
+
 export default RestaurantScreen

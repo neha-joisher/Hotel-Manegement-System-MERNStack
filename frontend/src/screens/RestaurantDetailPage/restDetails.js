@@ -160,3 +160,4 @@ const RestaurantDetail = ({ match, history }) => {
 }
 
 export default RestaurantDetail
+
