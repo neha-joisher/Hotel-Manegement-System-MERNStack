@@ -131,7 +131,7 @@ const ReservationScreen = ({ match, history }) => {
 
                                     <Form.Group controlId='username'>
                                           <Form.Label>User Name</Form.Label>
-                                          <Form.Control
+                                          <Form.Control required
                                                 type='text'
                                                 placeholder=''
                                                 value={userName}
@@ -153,7 +153,7 @@ const ReservationScreen = ({ match, history }) => {
 
                                     <Form.Group controlId='date'>
                                           <Form.Label>Date</Form.Label>
-                                          <Form.Control
+                                          <Form.Control required
                                                 type='date'
                                                 placeholder='Date'
                                                 value= {date}
@@ -163,7 +163,7 @@ const ReservationScreen = ({ match, history }) => {
 
                                     <Form.Group controlId='time'>
                                           <Form.Label>Timing</Form.Label>
-                                          <Form.Control
+                                          <Form.Control required
                                                 type='time'
                                                 placeholder='At what time?'
                                                 value={time}
@@ -173,7 +173,7 @@ const ReservationScreen = ({ match, history }) => {
 
                                     <Form.Group controlId='adults'>
                                           <Form.Label>No. of Adults</Form.Label>
-                                          <Form.Control
+                                          <Form.Control required
                                                 type='number'
                                                 placeholder='Adults'
                                                 value={adults}
@@ -181,9 +181,9 @@ const ReservationScreen = ({ match, history }) => {
                                           ></Form.Control>
                                     </Form.Group>
 
-                                    <Form.Group controlId='childrens'>
+                                    <Form.Group controlId='childrens' >
                                           <Form.Label>No. of minors</Form.Label>
-                                          <Form.Control
+                                          <Form.Control required
                                                 type='number'
                                                 placeholder='Childrens '
                                                 value={childrens}
@@ -193,7 +193,7 @@ const ReservationScreen = ({ match, history }) => {
 
                                     <Form.Group controlId='phoneNo'>
                                           <Form.Label>Phone Number</Form.Label>
-                                          <Form.Control
+                                          <Form.Control required
                                                 type='text'
                                                 placeholder='Phone number'
                                                 value={phoneNo}

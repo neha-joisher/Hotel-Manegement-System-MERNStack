@@ -68,7 +68,7 @@ const ShippingScreen = ({ history }) => {
                     <Form onSubmit={submitHandler}>
                         <Form.Group controlId='address' className='py-1'>
                             <Form.Label>Enter Address</Form.Label>
-                            <Form.Control type='text' placeholder='Enter address' value={address} required onChange={(e) => setAddress(e.target.value)}></Form.Control>
+                            <Form.Control required type='text' placeholder='Enter address' value={address} onChange={(e) => setAddress(e.target.value)}></Form.Control>
                             <Form.Control.Feedback type="invalid">
                                 Please enter valid address info.
                             </Form.Control.Feedback>
@@ -76,7 +76,7 @@ const ShippingScreen = ({ history }) => {
 
                         <Form.Group controlId='city' className='py-2'>
                             <Form.Label>Enter City Name</Form.Label>
-                            <Form.Control type='text' placeholder='Enter City Name' value={city} required onChange={(e) => handleChangeCityName(e)}></Form.Control>
+                            <Form.Control required type='text' placeholder='Enter City Name' value={city} onChange={(e) => handleChangeCityName(e)}></Form.Control>
                             <Form.Control.Feedback type="invalid">
                                 Please provide a valid city name.
                             </Form.Control.Feedback>
@@ -84,7 +84,7 @@ const ShippingScreen = ({ history }) => {
 
                         <Form.Group controlId='country' className='py-2'>
                             <Form.Label>Enter Country Name</Form.Label>
-                            <Form.Control type='text' placeholder='Enter country' value={country} required onChange={(e) => handleChangeCountryName(e)}></Form.Control>
+                            <Form.Control required type='text' placeholder='Enter country' value={country} onChange={(e) => handleChangeCountryName(e)}></Form.Control>
                             <Form.Control.Feedback type="invalid">
                                 Please provide a valid country name.
                             </Form.Control.Feedback>
@@ -92,7 +92,7 @@ const ShippingScreen = ({ history }) => {
 
                         <Form.Group controlId='postalCode' className='py-2'>
                             <Form.Label>Enter Zipcode</Form.Label>
-                            <Form.Control type='text' placeholder='Enter zipcode' value={postalCode} required onChange={(e) => handleChangeZipcode(e)}></Form.Control>
+                            <Form.Control required type='text' placeholder='Enter zipcode' value={postalCode} onChange={(e) => handleChangeZipcode(e)}></Form.Control>
                             <Form.Control.Feedback type="invalid">
                                 Please provide a valid zipcode value.
                             </Form.Control.Feedback>
