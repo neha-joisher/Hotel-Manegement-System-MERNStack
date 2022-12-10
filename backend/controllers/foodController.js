@@ -63,7 +63,7 @@ const deleteFood = asyncHandler(async (req, res) => {
   }
 })
 
-const updateFood = asyncHandler(async(req,res) => {
+const updateFood = asyncHandler(async (req, res) => {
   const {
     name,
     description,
@@ -77,10 +77,10 @@ const updateFood = asyncHandler(async(req,res) => {
 
   if (foods) {
     foods.name = name,
-    foods.description = description,
-    foods.price = price,
-    foods.category = category,
-    foods.image = image
+      foods.description = description,
+      foods.price = price,
+      foods.category = category,
+      foods.image = image
 
     const updateFood = await foods.save()
     res.json(updateFood)
@@ -92,4 +92,4 @@ const updateFood = asyncHandler(async(req,res) => {
 
 })
 
-export { getFoods, getFoodbyID, createFood, deleteFood,updateFood }
+export { getFoods, getFoodbyID, createFood, deleteFood, updateFood }

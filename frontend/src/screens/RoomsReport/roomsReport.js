@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { listRooms } from '../../actions/roomAction'
 import Message from '../../components/Message'
 import Loader from '../../components/Loader'
-import logo from './bistro.png'
+import logo from './tipton-logo.png'
 
 import { Container } from 'react-bootstrap'
 import { PDFExport, savePDF } from '@progress/kendo-react-pdf';

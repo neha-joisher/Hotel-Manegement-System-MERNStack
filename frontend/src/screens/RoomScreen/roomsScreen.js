@@ -186,6 +186,7 @@ const RoomsScreen = () => {
 
                               <div className="col-md-9 mt-2 room_list">
                                     {hotels.map((room) => (
+                                          <div className='container-card'> 
                                           <div className='row bs room_card' key={room._id}>
                                                 <div className='col-md-4'>
                                                       <img src={room.imageUrls[0]} className='smallimg'></img>
@@ -201,7 +202,7 @@ const RoomsScreen = () => {
                                                       <div style={{ float: 'right' }} className='vb'>
 
                                                             {(fromdate && todate) && (<LinkContainer to={`/roombook/${room._id}/${fromdate}/${todate}`}>
-                                                                  <button className='book_now'>Book Now</button>
+                                                                  <button className="btn btn-dark btn-inline rounded-pill shadow-sm">Book Now</button>
                                                             </LinkContainer>)}
 
 
@@ -209,10 +210,11 @@ const RoomsScreen = () => {
                                                       <div style={{ float: 'right' }} className='vb'>
 
                                                             <LinkContainer to={`/room/${room._id}`}>
-                                                                  <button>View Details</button>
+                                                                  <button className="btn btn-dark btn-inline rounded-pill shadow-sm">View Details</button>
                                                             </LinkContainer>
                                                       </div>
                                                 </div>
+                                          </div>
                                           </div>
                                     ))}
 

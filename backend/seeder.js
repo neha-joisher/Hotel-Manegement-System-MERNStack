@@ -30,7 +30,7 @@ const importData = async () => {
     }
 }
 
-//destrom sample data from database
+//Delete sample data from database
 const destroyData = async () => {
     try{
       
